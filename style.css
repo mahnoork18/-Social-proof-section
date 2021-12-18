@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Outfit:wght@300;400;600&family=Spartan:wght@400;500;700&display=swap');
+
+:root{
+
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+
+
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+    min-height: 100vh;
+    min-width: 375px;
+    font-family: 'Spartan', sans-serif;
+    background: var(--White);
+    overflow-x: hidden;
+}
+
+
+.wrapper{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.social-description{
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 100px;
+    text-align: left;
+}
+.main-heading{
+    font-size: 1.8rem;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+.description{
+    color: var(--Dark-Grayish-Magenta);
+    font-weight: 600;
+    font-size: 15px;
+}
+.reviews-bar{
+    width: 100%;
+    max-width: 800px;
+margin-top: 100px;
+margin-left: 250px;
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    
+}
+.stars{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    margin-left: 15px;
+}
+
+.review-1{
+    width: 70%;
+display: flex;
+    gap:2em;
+    background: var(--Light-Grayish-Magenta);
+    color: var(--Very-Dark-Magenta);
+    border-radius: 5px;
+}
+.review-2{
+    width: 70%;
+    gap:1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 80px;
+    background: var(--Light-Grayish-Magenta);
+    color: var(--Very-Dark-Magenta);
+    border-radius: 5px;
+}
+.review-3{
+    width: 70%;
+    gap:1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 180px;
+    background: var(--Light-Grayish-Magenta);
+    color: var(--Very-Dark-Magenta);
+    border-radius: 5px;
+
+}
+.buyer-boxes{
+    display: flex;
+    align-items: flex-start;
+    gap:0em;
+
+}
+.buyer-one{
+    
+    background: var(--Very-Dark-Magenta);
+    width: 25%;
+    padding: 15px;
+    margin-left: 100px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+.buyer-intro{
+    display: flex;
+}
+.buyer-img img{
+    width: 40px;
+    height:40px;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.buyer-name{
+ margin-top: 20px;
+ margin-left: 15px;
+ color: var(--White);
+ font-weight: 600;
+}
+.buyer-name h6{
+    margin-top: -15px;
+    color: var(--Soft-Pink);
+    font-size: 14px;
+    font-weight: 300;
+}
+.says{
+    text-align: center;
+    color: var(--Light-Grayish-Magenta);
+    font-weight: 400;
+    font-size: 15px;
+}
+.buyer-two{
+    background: var(--Very-Dark-Magenta);
+    width: 25%;
+
+    padding: 15px;
+    margin-left: 30px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+.buyer-three{
+    background: var(--Very-Dark-Magenta);
+    width: 25%;
+    padding: 15px;
+    margin-left: 30px;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+@media(max-width:760px){
+ 
+    .wrapper{
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+ 
+    .social-description{
+        margin-left: 0px;
+        margin-top: -10px;
+       text-align: center;
+       
+    }
+    .main-heading{
+        font-size: 12px;
+    }
+.description{
+    font-size: 10px;
+}
+.reviews-bar{
+margin-left: 0px;
+ margin-top: 10px;
+    
+}
+.review-1{
+    flex-direction: column;
+    width: 100%;
+    margin-left: -30px;
+text-align: center;
+    gap: 0em;
+    
+}
+.review-2,.review-3{
+    flex-direction: column;
+    margin-left: -30px;
+    width: 100%;
+    text-align: center;
+    gap: 0em;
+}
+
+
+.buyer-boxes{
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 2em;
+        margin: 0 auto;
+
+
+}
+.buyer-one,.buyer-two,.buyer-three{
+    width: 80%;
+    margin-left: 0px;
+}
+.says{
+    text-align: left;
+}
+    h4{
+        font-size:12px;
+    }
+    
+}
